@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Al toque</string>
+    <string name="inicio">Comenzar</string>
+    <string name="dias">Dias para la entrega:</string>
+    <string name="nombre">By: Joshua Mejia</string>
+
+    <string name="bienvenida">Hola!</string>
+    <string name="bienvenida2">¿Qué haremos hoy?</string>
+    <string name="buscar">Buscar Receta</string>
+    <string name="subir">Subir Receta</string>
+
+    <string name="datosReceta">Datos de tu receta</string>
+    <string name="nombreComida">Nombre:</string>
+    <string name="comidaHint">Nombre de tu receta</string>
+    <string name="descripcion">Descripción:</string>
+    <string name="descripcionHint">Información breve de la comida</string>
+    <string name="nombreIngredientes">Ingredientes:</string>
+    <string name="ingredientesHint">Ingredientes: Cantidad y nombre</string>
+    <string name="preparacion">Preparación:</string>
+    <string name="preparacionHint">Pasos a seguir: 1. paso, 2. paso, etc</string>
+    <string name="consejos">Consejos:</string>
+    <string name="consejosHint">Consejos que puedan ayudar</string>
+    <string name="foto">Foto de la comida</string>
+    <string name="camara">Usar Camara</string>
+
+    <string name="barraBusqueda">Buscar receta</string>
+</resources>

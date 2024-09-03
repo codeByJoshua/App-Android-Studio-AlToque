@@ -1,0 +1,38 @@
+package com.example.altoque.db;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+import androidx.annotation.Nullable;
+
+public class DbHelper extends SQLiteOpenHelper {
+
+    private static final int DATABASE_VERSION = 1;
+    private static final String DATABASE_NOMBRE = "altoqueRecetario.db" ;
+    public static final String TABLE_RECETA = "t_recetas";
+
+
+    public DbHelper(@Nullable Context context) {
+        super(context, DATABASE_NOMBRE, null, DATABASE_VERSION);
+    }
+
+    @Override
+    public void onCreate(SQLiteDatabase sqLiteDatabase) {
+
+        sqLiteDatabase.execSQL("CREATE TABLE " + TABLE_RECETA + "(" +
+                " ID INTEGER PRIMARY KEY AUTOINCREMENT," +
+                " NOMBRE TEXT NOT NULL," +
+                " DESCRIPCION TEXT NOT NULL," +
+                " INGREDIENTES TEXT NOT NULL," +
+                " PREPARACION TEXT NOT NULL," +
+                " CONSEJOS TEXT NOT NULL," +
+                " RUTA TEXT NOT NULL)");
+    }
+
+    @Override
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+        sqLiteDatabase.execSQL("DROP TABLE "+ TABLE_RECETA);
+        onCreate(sqLiteDatabase);
+    }
+}

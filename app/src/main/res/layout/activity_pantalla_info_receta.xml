@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+
+    android:orientation="vertical"
+    tools:context=".PantallaInfoReceta">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/nombreComida"
+        android:textColor="@color/white"
+        android:fontFamily="@font/zillaslab"
+        android:textSize="30sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/recetaNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/zillaslab"
+        android:textSize="30sp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/nombreIngredientes"
+        android:textColor="@color/white"
+        android:fontFamily="@font/zillaslab"
+        android:textSize="25sp"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaIngredientes"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/zillaslab"/>
+
+    <Button
+        android:id="@+id/comenzemos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/zillaslab"
+        android:text="Comenzemos" />
+
+</LinearLayout>

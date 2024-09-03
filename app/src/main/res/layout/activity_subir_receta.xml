@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".SubirReceta">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/datosReceta"
+                android:textColor="@color/white"
+                android:textSize="45sp"
+                android:fontFamily="@font/lobster">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/nombreComida"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/zillaslab">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/nombreReceta"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:hint="@string/comidaHint"
+                android:textColorHint="@color/black"
+                android:inputType="text"
+                android:autofillHints="nombre">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/descripcion"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/zillaslab"/>
+
+            <EditText
+                android:id="@+id/descripcionReceta"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:hint="@string/descripcionHint"
+                android:textColorHint="@color/black"
+                android:inputType="text"
+                android:autofillHints="info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/nombreIngredientes"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/zillaslab">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/ingredienteReceta"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:hint="@string/ingredientesHint"
+                android:textColorHint="@color/black"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:isScrollContainer="true"
+                android:autofillHints="ingredientes" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/preparacion"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/zillaslab">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/preparacionReceta"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:hint="@string/preparacionHint"
+                android:textColorHint="@color/black"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:isScrollContainer="true"
+                android:autofillHints="como se prepara" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/consejos"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/zillaslab">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/consejosReceta"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:hint="@string/consejosHint"
+                android:textColorHint="@color/black"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:isScrollContainer="true"
+                android:autofillHints="tips" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/foto"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/zillaslab">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/fotoComida"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/botonCamara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/camara"
+                android:fontFamily="@font/zillaslab"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <Button
+                android:id="@+id/subirReceta"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:text="@string/subir"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/zillaslab"
+                android:backgroundTint="@color/orange"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
